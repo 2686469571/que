@@ -1,0 +1,291 @@
+.heima_nav{
+    background-color: #ffffff;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+
+}
+.heima_nav .navbar-brand{
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+
+}
+.heima_nav .navbar-brand:hover,.heima_nav .navbar-brand:focus{
+    color: #5e5e5e;
+    background-color:transparent;
+
+}
+.heima_nav .navbar-text{
+    color: #777;
+}
+/* 设置导航栏每个菜单样式 */
+.heima_nav .navbar-nav>li>a{
+    color: #777;
+    height: 80px;
+    line-height: 50px;
+
+}
+.heima_nav .navbar-nav>li>a:hover,.heima_nav .navbar-brand>li>a:focus{
+    color: #333;
+background-color: transparent;
+border-bottom: 3px solid #e92322;
+}
+/* 设置活动菜单和非活动菜单的样式 */
+.heima_nav .navbar-nav>.active>a,
+.heima_nav .navbar-nav>.active>a:hover,
+.heima_nav .navbar-nav>.active>a:focus{
+    color: #555;
+    background-color: #fff;
+    border-bottom: 3px solid #e92322;
+
+}
+
+.heima_nav .navbar-nav>.disabled>a,
+.heima_nav .navbar-nav>.disabled>a:hover,
+.heima_nav .navbar-nav>.disabled>a:focus{
+    color: #ccc;
+    background-color: transparent;
+}
+/* 设置汉堡按钮的样式 */
+.heima_nav .navbar-toggle{
+    border-color: #ddd;
+    margin-top: 23px;
+    margin-bottom: 23px;
+}
+.heima_nav .navbar-toggle:hover,
+.heima_nav .navbar-toggle:focus{
+    background-color: #888;
+}
+.heima_nav .navbar-collapse,
+.heima_nav .navbar-form{
+    border-color: #e7e7e7;
+}
+.heima_nav .navbar-nav>.open>a,
+.heima_nav .navbar-nav>.open>a:hover,
+.heima_nav .navbar-nav>.open>a:focus{
+    color: #555;
+    background-color: #e7e7e7;
+}
+
+/* 当屏幕小于或等于757px时菜单栏的样式 */
+
+@media (max-width:767px){
+    .heima_nav .navbar-nav .open .dropdown-menu>li>a{
+        color: #777;
+    }
+    .heima_nav .nacbar-nav .open .dropdown-menu>li>a:hover,
+    .heima_nav .navbar-nav .open .dropdown-menu>li>a:focus{
+        color: #333;
+        /*transparent 指定背景颜色应该是透明的。这是默认 */
+        background-color: transparent;
+    }
+
+    .heima_nav .navbar-nav .open .dropdown-meun>.active>a,
+    .heima_nav .navbar-nav .open .dropdown-meun>.active>a:hover,
+    .heima_nav .navbar-nav .open .dropdown-meun>.active>a:focus{
+        color: #555;
+        background-color: #e7e7e7;
+    }
+.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a,
+.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:hover,
+.heima_nav .navbar-nav .open .dropdown-menu>.disabled>a:focus{
+    color: #ccc;
+    background-color:transparent;
+}
+.heima_nav .navbar-link{
+    color: #777;
+}
+.heima_nav .navbar-link:hover{
+    color: #333;
+
+}
+.heima_nav .btn-link{
+    color: #777;
+}
+.heima_nav .btn-link:hover,
+.heima_nav .btn-link:focus{
+    color: #333;
+}
+.heima_nav .btn-link[disabled]:hover,
+fieldset[disabled] .heima_nav .btn-link:hover,
+.heima_nav .btn-link[disabled]:focus,
+fieldset[disabled] .heima_nav .btn-link:focus{
+    color: #333;
+}
+}
+/* 信息 */
+.heima_info{
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.heima_info>.container{
+    width: 910px;
+}
+.heima_info .heima_icon{
+    font-size: 30px;
+}
+.heima_info .col-md-4{
+    padding:10px;
+
+}
+.heima_info a:hover{
+    color: #e92322;
+}
+
+
+
+
+/* 字体图标 */
+
+
+
+/* 预约 */
+.heima_book{
+    padding: 25px 0;
+    border-bottom: 1px solid #ccc;
+}
+.heima_book>.container{
+    width: 910px;
+}
+@media screen and (max-width:768px){
+    .heima_book>.container{
+        width: 100%;
+    }
+}
+.heima_book .heima_icon{
+    font-size: 24px;
+}
+.heima_book a:hover{
+    color: #e92322;
+}
+.heima_book .book_link{
+    color: #E92322;
+    border-bottom: 1px dashed #E92322;
+}
+
+
+
+/* 产品css */
+
+
+.heima_product{
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    padding: 30px 0;
+}
+.nav-tabs-product{
+    border-bottom: 1px solid #ccc;
+}
+.nav-tabs-product>li{
+    float: left;
+    padding-left: 20px;
+}
+.nav-tabs-product>li>a{
+margin-right: 2px;
+line-height: 1.42851743;
+border-radius: 4px 4px 0 0;
+}
+.nav-tabs-product>li>a:hover{
+    background: #f5f5f5;
+}
+.nav-tabs-product>li .active>a,
+.nav-tabs-product>li .active>a:hover,
+.nav-tabs-product>li .active>a:focus{
+    color: #555;
+    cursor: default;
+    border: none;
+    background: #f5f5f5;
+    border-bottom: 3px solid #E92322;
+}
+
+.nav-tabs-product .nav-justified{
+    width: 100%;
+    border-bottom:0;
+}
+.nav-tabs-product .nav-justified>li{
+    float:none;
+}
+.nav-tabs-product .nav-justified>li>a{
+    margin-bottom: 5px;
+    text-align: center;
+}
+.nav-tabs-product .nav-justified>.dropdown .dropdown-menu{
+    top: auto;
+    left: auto;
+}
+.nav-tabs-product .nav-justified>li{
+    display: table-cell;
+    width: 1%;
+}
+.nav-tabs-product .nav-justified>li>a{
+    margin-bottom: 0;
+    border-radius: 4px;
+}
+
+.nav-tabs-product .nav-justified> .active>a,
+.nav-tabs-product .nav-justified> .active>a:hover,
+.nav-tabs-product .nav-justified>.active>a:focus{
+    border: 1px solid #ddd;
+}
+@media(max-width:767px){
+    .nav-tabs-product .nav-justified>li>a{
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0;
+    }
+    .nav-tabs-product .nav-justified> .active>a,
+    .nav-tabs-product .nav-justified> .active>a:hover,
+    .nav-tabs-product .nav-justified>.active>a:focus{
+        border-bottom-color:#fff;
+    }
+}
+
+
+
+/* 页签父盒子 */
+
+.nav-tabs-product-parent{
+    width: 100%;
+    overflow: hidden;
+}
+/* 产品盒子 */
+.product_box{
+    height: 150px;
+    width: 100%;
+    display: block;
+    background: #fff;
+    box-shadow: 2px 2px 3px 1px #d8d8d8;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #666;
+}
+.product_box p{
+    margin-bottom: 0;
+}
+.product_box .active{
+    background: #e92322;
+    position: relative;
+}
+.product_box .active::before{
+    content: "\e915";
+   font-family: heima;
+   position: absolute;
+   top: -7px;
+   left: 0;
+   color: #fff;
+   font-size: 33px;
+}
+.product_box .product_box_left{
+    overflow: hidden;
+}
+.product_box .product_box_left h3{
+    font-size: 16px;
+    margin: 10px 0;
+}
+.product_box .active .product_box_left{
+    color: #fff;
+}
+.product_box .product_box_left>div{
+    margin-top:10px;
+}
