@@ -6,40 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <!-- <link rel="stylesheet" href="八/index.css"> -->
+   
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/css/bootstrap.min.css">  
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/pop-a
+per.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <style>
+            /* Make the image fully responsive */
+            .carousel-inner img {
+                margin: auto;
+                width: 100%;
+                height:60%;
+           
+            }
+            </style>
 </head>
 <body>
-   <nav class="navbar heima_nav">
-       <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-           <a class="navbar-brand" href="#">
-
-
-               <img src="" alt="">
-           </a>
-
-        </div>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">我要投资</a></li>
-               <li><a href="#">我要借贷</a></li>
-               <li><a href="#">平台介绍</a></li>
-               <li><a href="#">新手专区</a></li>
-               <li><a href="#">最新动态</a></li>
-               <li><a href="#">微平台</a></li>
-            </ul>
-           <ul class="nav navbar-nav navbar-right hidden-sm">
-               <li><a href="#">个人中心</a></li>
-           </ul>
-        </div>
-       </div>
-   </nav>
-
+        <header class="heima_topBar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <a href="#" class="heima_app">
+                                <span class="heima_icon heima_icon_phone">
+        
+                                </span>
+                                <span>手机黑马商城</span>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                                <img src="https://i03piccdn.sogoucdn.com/725bde021fcffa4c" alt="">
+                            </a>
+                        </div>
+                        <div class="col-md-5">
+                            <span class="heima_icon heima_icon_tel"></span>
+                            <span>4006-618-9090（服务时间:9:00-21:00）</span>
+                        </div>
+                        <div class="col-md-2">
+                            <a href="#">常见问题</a>
+                            <a href="#" class="m_110">财富登入</a>
+                        </div>
+                        <div class="col-md-3">
+                            <a href="#" class="btn btn-danger btn-sm btn-register">免费注册</a>
+                            <a href="#" class="btn btn-link btn-sm btn-login">登入</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- 导航栏 -->
+            <nav class="navbar heima_nav">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="" alt="">
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right hidden_sm">
+                            <li class="active"><a href="#">我要投资</a></li>
+                            <li><a href="#">我要借贷</a></li>
+                            <li><a href="#">平台介绍</a></li>
+                            <li><a href="#">新手专区</a></li>
+                            <li><a href="#">最新动态</a></li>
+                            <li><a href="#">个人中心</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+ 
+                    <!-- 指示符 -->
+                    <ul class="carousel-indicators">
+                      <li data-target="#demo" data-slide-to="0" class="active"></li>
+                      <li data-target="#demo" data-slide-to="1"></li>
+                      <li data-target="#demo" data-slide-to="2"></li>
+                    </ul>
+                   
+                    <!-- 轮播图片 -->
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="http://static.runoob.com/images/mix/img_fjords_wide.jpg" width="100%" height="300" >
+                      </div>
+                      <div class="carousel-item">
+                        <img src="http://static.runoob.com/images/mix/img_nature_wide.jpg">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="http://static.runoob.com/images/mix/img_mountains_wide.jpg">
+                      </div>
+                    </div>
+                   
+                    <!-- 左右切换按钮 -->
+                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                   
+                  </div>
 
    <div class="heima_info hidden-xs">
        <div class="container">
@@ -48,7 +118,7 @@
                    <a href="#">
                        <div class="media">
                            <div class="media-left">
-                               <span class="heima_icon heima_icon_E903"></span>
+                            <img src="images/b01.jpg" alt="" width="50" height="60">
 
                            </div>
                            <div class="madia-body">
@@ -64,7 +134,7 @@
                     <a href="#">
                         <div class="media">
                             <div class="media-left">
-                                <span class="heima_icon heima_icon_E903"></span>
+                                <img src="images/b01.jpg" alt="" width="50" height="60">
  
                             </div>
                             <div class="madia-body">
@@ -80,7 +150,7 @@
                         <a href="#">
                             <div class="media">
                                 <div class="media-left">
-                                    <span class="heima_icon heima_icon_E903"></span>
+                                    <img src="images/b01.jpg" alt="" width="50" height="60">
      
                                 </div>
                                 <div class="madia-body">
@@ -95,7 +165,7 @@
                             <a href="#">
                                 <div class="media">
                                     <div class="media-left">
-                                        <span class="heima_icon heima_icon_E903"></span>
+                                        <img src="images/b01.jpg" alt="" width="50" height="60">
          
                                     </div>
                                     <div class="madia-body">
@@ -110,7 +180,7 @@
                                 <a href="#">
                                     <div class="media">
                                         <div class="media-left">
-                                            <span class="heima_icon heima_icon_E903"></span>
+                                            <img src="images/b01.jpg" alt="" width="50" height="60">
              
                                         </div>
                                         <div class="madia-body">
@@ -126,7 +196,7 @@
                                     <a href="#">
                                         <div class="media">
                                             <div class="media-left">
-                                                <span class="heima_icon heima_icon_E903"></span>
+                                                <img src="images/b01.jpg" alt="" width="50" height="60">
                  
                                             </div>
                                             <div class="madia-body">
@@ -315,5 +385,108 @@
           </div>
       </div>
       </div>
+    <!-- 新闻模块 -->
+    <div class="heima_news">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-md-offset-2">
+                    <div class="news_title">全部新闻</div>
+                </div>
+                <div class="col-md-1">
+                    <div class="news_line hidden-sm hidden-xs"></div>
+                    <!-- Nzv tsbs -->
+                    <ul class="nav nav-tabs-news" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#home" aria-controls="home" role="tab" data-tooggle="tab">
+                                <span class="heima_icon heima_icon_new01"></span>    </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#profile" aria-controls="profile" role="tab" data-tooggle="tab">
+                                <span class="heima_icon heima_icon_new02"></span>    </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#messages" aria-controls="messages" role="tab" data-tooggle="tab">
+                                <span class="heima_icon heima_icon_new03"></span>    </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#settings" aria-controls="settings" role="tab" data-tooggle="tab">
+                                <span class="heima_icon heima_icon_new04"></span>    </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-md-7">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <ul>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="hidden-xs">2018-1-02</span>
+                                    【黑马还款】一周还款公告2018年12月23日-2018年12月29日
+                                    </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div role="tabpabel" class="tab-pane" id="profile">...</div>
+                        <div role="tabpabel" class="tab-pane" id="messages">...</div>
+                        <div role="tabpabel" class="tab-pane" id="settings">...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer 模块 -->
+    <footer class="heima_partner">
+        <div class="container">
+            <h3>合作伙伴</h3>
+            <ul>
+         <li><a href="#" class="heima_icon heima_icon_partner01"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner02"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner03"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner04"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner05"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner06"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner07"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner08"></a></li>
+         <li><a href="#" class="heima_icon heima_icon_partner09"></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

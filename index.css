@@ -1,3 +1,96 @@
+/* 公用的css common */
+body{
+    font-family: "Microsoft YaHei",sans-serif;
+    font-size: 14px;
+    color: #333;
+    
+}
+a{
+    color: #333;
+}
+a:hover{
+    color: #333;
+    text-decoration: none;
+}
+/* 定义字体 */
+@font-face{
+    font-family: itheima;
+    src:url('/fonts/MiFie-Wed-Font.eot')format('embedded-opentype'),
+    url('/fonts/MiFie-Wed-Font.svg')format('svg'),
+    url('/fonts/MiFie-Wed-Font.ttf')format('truetype'),
+    url('/fonts/MiFie-Wed-Font.woff')format('woff'),
+}
+/* 应用自定义字体 */
+.heima_icon{
+    font-family: itheima;
+}
+.heima_icon_phone::before{
+    content: "\e908";
+   
+   
+}
+
+
+.heima_icon_tel::before{
+    content: "\e909";
+}
+/* 顶部通栏 */
+.heima_topBar{
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: #666;
+    position: relative;
+    z-index: 1001;
+}
+.heima_topBar a{
+    color: #666;
+}
+.heima_topBar a:hover{
+    color: #666;
+}
+/* + ~ */
+.heima_topBar>.container>.row>div{
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.heima_topBar>.container>.row>div + div{
+    border-left: 1px solid#ccc;
+}
+/* 二维码的位置显示、影藏 */
+.heima_app{
+    position: relative;
+    display:block;
+}
+.heima_app img{
+    display: none;
+}
+.heima_app:hover img{
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border: 1px solid#ccc;
+    border-top: none;
+    margin-left: -60px;
+    width: 150px;
+    height: 150px;
+}
+/* 注册按钮s */
+.heima_topBar .btn-register{
+    background: #e92322;
+    color: #fff;
+    padding: 3px 15px;
+}
+.heima_topBar .btn-register:hover{
+    color: #fff;
+    border-collapse:  #e92322;
+}
+/* 登入按钮 */
+.heima_topBar .btn-login:hover{
+    text-decoration: none;
+}
+
 .heima_nav{
     background-color: #ffffff;
     border: none;
@@ -67,6 +160,10 @@ border-bottom: 3px solid #e92322;
     color: #555;
     background-color: #e7e7e7;
 }
+.carousel-inner>img{
+    width: 100%;
+    height: 250px;
+}
 
 /* 当屏幕小于或等于757px时菜单栏的样式 */
 
@@ -124,8 +221,10 @@ fieldset[disabled] .heima_nav .btn-link:focus{
     width: 910px;
 }
 .heima_info .heima_icon{
+    background:url(images/b01.jpg);
     font-size: 30px;
 }
+
 .heima_info .col-md-4{
     padding:10px;
 
@@ -138,7 +237,26 @@ fieldset[disabled] .heima_nav .btn-link:focus{
 
 
 /* 字体图标 */
+.heima_icon_E903::before{
+    content: "\e903";
 
+}
+.heima_icon_E907::before{
+    content: "\e907";
+}
+.heima_icon_E901::before{
+    content: "\e901";
+}
+.heima_icon_E900::before{
+    content: "\e900";
+
+}
+.heima_icon_E904::before{
+    content: "\e904";
+}
+.heima_icon_E902::before{
+    content: "\e902";
+}
 
 
 /* 预约 */
@@ -164,8 +282,16 @@ fieldset[disabled] .heima_nav .btn-link:focus{
     color: #E92322;
     border-bottom: 1px dashed #E92322;
 }
+.heima_icon_E906::before{
+    content: "\e906";
+}
+.heima_icon_E905::before{
+    content:"\e905";
+}
 
-
+.heima_icon .heima_icon_E905{
+    left: 300px;
+}
 
 /* 产品css */
 
@@ -251,8 +377,8 @@ border-radius: 4px 4px 0 0;
 }
 /* 产品盒子 */
 .product_box{
-    height: 150px;
-    width: 100%;
+    /* height: 150px; */
+    width: 300%;
     display: block;
     background: #fff;
     box-shadow: 2px 2px 3px 1px #d8d8d8;
@@ -288,4 +414,86 @@ border-radius: 4px 4px 0 0;
 }
 .product_box .product_box_left>div{
     margin-top:10px;
+}
+.product_box .product_box_left>div>p{
+    width: 100%;
+    height: 20px;
+    overflow: hidden;
+}
+.product_box .product_box_left .progress{
+    height: 10px;
+}
+.product_box .product_box_right{
+    float: right;
+    width: 108px;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    border-left: 1px dashed #ccc;
+}
+.product_box .product_box_right::before,
+.product_box .product_box_right::after{
+    content: "";
+    position: absolute;
+    left: -6px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #f5f5f5;
+}
+.product_box .product_box_right::before{
+    top: -6px;
+    box-shadow: 0 -2px 2px #d8d8d8 inset;
+}
+
+.product_box .product_box_right::after{
+    bottom: -6px;
+    box-shadow: 0 2px 2px #d8d8d8 inset;
+}
+
+.product_box_right p:first-of-type {
+margin-bottom: 0;
+margin-top:25px;
+color: #e92322;
+}
+.product_box .active .product_box_right p{
+    color: #fff;
+}
+.product_box_right p:first-of-type b{
+    font-size: 44px;
+
+}
+.product_box_right p:first-of-type sub{
+    bottom: 0;
+}
+
+.text-left{
+margin-top: -10px;    
+
+}
+
+
+/* 工具提示 */
+
+.toolTip_box{
+    position:absolute;
+top: 15px;
+left:0;
+text-align: center;
+width: 100%;
+}
+.toolTip_box>span{
+    height: 15px;
+    width: 15px;
+    text-align: center;
+    line-height: 15px;
+    display: inline-block;
+}
+.toolTip_box .bao{
+    color: green;
+    border: 1px solid green;
+}
+.toolTip_box .bei{
+    color: red;
+border: 1px solid red;
 }
