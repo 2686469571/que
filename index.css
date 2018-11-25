@@ -164,7 +164,9 @@ border-bottom: 3px solid #e92322;
     width: 100%;
     height: 250px;
 }
-
+.pull-left>.heima_icon_E906::before{
+    content: url(images/时间.png);
+}
 
 /* 当屏幕小于或等于757px时菜单栏的样式 */
 
@@ -286,8 +288,9 @@ fieldset[disabled] .heima_nav .btn-link:focus{
 .heima_icon_E906::before{
     content: "\e906";
 }
+
 .heima_icon_E905::before{
-    content:"\e905";
+    content:url(images/恐怖电影——黑猫.png);
 }
 
 .heima_icon .heima_icon_E905{
